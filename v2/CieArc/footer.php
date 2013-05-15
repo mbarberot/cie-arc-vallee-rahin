@@ -1,7 +1,8 @@
-      <footer>
-        <?php bloginfo('name'); ?> est propulsé par <a href="http://wordpress.org">WordPress</a>.
-      </footer>
-    </div>
-    <?php wp_footer(); ?>
-  </body>
+            <footer>
+                <?php bloginfo('name'); ?> est propulsé par <a href="http://wordpress.org">WordPress</a>.
+            </footer>
+
+            <?php wp_footer(); ?>
+        </div> <!-- .container -->
+    </body>
 </html>

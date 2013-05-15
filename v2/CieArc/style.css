@@ -5,3 +5,7 @@ Description: Thème WordPress créé spécialement pour le site de la Compagnie 
 Version: 0.a
 Author: Barberot Mathieu
 */
+
+body {
+    background-color : #ff3333 ;
+}

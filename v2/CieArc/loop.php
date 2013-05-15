@@ -1,7 +1,4 @@
 <?php if (have_posts()) : ?>
-  <p class="title">
-    Hey ! Il y a des Posts !
-  </p>
   <?php while (have_posts()) : the_post(); ?>
     <div class="post">
       <h3 class="post-title">
