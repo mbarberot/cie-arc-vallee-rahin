@@ -1,4 +1,4 @@
-<div class="post">
+<div class="media">
     
     <?php if( is_single() ) : ?>
         <h1 class="post-title">
