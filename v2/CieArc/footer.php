@@ -1,5 +1,8 @@
-            <footer>
-                <?php bloginfo('name'); ?> est propulsé par <a href="http://wordpress.org">WordPress</a>.
+            
+            <footer>    
+                <hr>            
+                <p class="muted">&COPY; Compagnie d'arc de la Vallée du Rahin 2013</p>
+                <br/>
             </footer>
 
             <?php wp_footer(); ?>
