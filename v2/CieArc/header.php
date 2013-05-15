@@ -17,14 +17,14 @@
         <div class="container">
             
             <header class="hero-unit">
-                <h1><a><?php bloginfo('name'); ?></a></h1>
+                <h1><a href="<?php bloginfo( 'siteurl' ); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h2><?php bloginfo('description'); ?></h2>
             </header>  
             
             <div class="navbar">
                 <div class="navbar-inner">
                     
-                    <a class="brand" href="<?php bloginfo( "home_url" ) ?>">Accueil</a>
+                    <a class="brand" href="<?php bloginfo( 'siteurl' ); ?>">Accueil</a>
                     
                     <ul class="nav">
                         <?php wp_list_pages("title_li="); ?>
