@@ -19,4 +19,19 @@
             <header class="hero-unit">
                 <h1><a><?php bloginfo('name'); ?></a></h1>
                 <h2><?php bloginfo('description'); ?></h2>
-            </header>        
+            </header>  
+            
+            <div class="navbar">
+                <div class="navbar-inner">
+                    
+                    <a class="brand" href="<?php bloginfo( "home_url" ) ?>">Accueil</a>
+                    
+                    <ul class="nav">
+                        <?php wp_list_pages("title_li="); ?>
+                    </ul>
+                    
+                    <!-- Formulaire de recherche -->
+                    <?php get_search_form(); ?>
+                     
+                </div>
+            </div>

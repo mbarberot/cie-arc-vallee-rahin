@@ -1,7 +1,4 @@
-
-
-<form method="get" id="form" action="<?php bloginfo('url'); ?>/">
-  <input type="text" value="<?php the_search_query(); ?>" name="s" id="s">
-  <input type="submit" id="submit">
-</form>
+<form method="get" id="form" class="navbar-search pull-right" action="<?php bloginfo('url'); ?>/">
+  <input type="text" class="search-query" placeholder="Rechercher" value="<?php the_search_query(); ?>" name="s" id="s">
+  </form>
 
