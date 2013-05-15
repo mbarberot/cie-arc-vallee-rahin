@@ -1,19 +1,20 @@
-<?php if (have_posts()) : ?>
-  <?php while (have_posts()) : the_post(); ?>
-    <div class="post">
-      <h3 class="post-title">
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-      </h3>
-      <p class="post-info">
-        Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
-      </p>
-      <div class="post-content">
-        <?php the_content(); ?>
-      </div>
+<div class="row">
+    <div class="span8">
+
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <?php get_template_part( "post" ); ?>
+            <?php endwhile; ?>
+        <?php else : ?>
+            <p class="nothing">
+                Il n'y a pas de Post à afficher !
+            </p>
+        <?php endif; ?>
+        
     </div>
-  <?php endwhile; ?>
-<?php else : ?>
-  <p class="nothing">
-    Il n'y a pas de Post à afficher !
-  </p>
-<?php endif; ?>
+    <div class="span4">
+        
+        <?php get_sidebar(); ?>
+        
+    </div>
+</div>
